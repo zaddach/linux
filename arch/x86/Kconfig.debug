@@ -217,6 +217,7 @@ config IOMMU_LEAK
 	  are debugging a buggy device driver that leaks IOMMU mappings.
 
 config HAVE_MMIOTRACE_SUPPORT
+    depends on PCI
 	def_bool y
 
 config X86_DECODER_SELFTEST
